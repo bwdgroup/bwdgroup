@@ -1,0 +1,348 @@
+/* Global Grid Template Areas */
+
+.header {
+	grid-area: header;
+}
+
+.introduction {
+	grid-area: introduction
+}
+
+.services {
+	grid-area: services;
+}
+
+.gallery {
+	grid-area: gallery;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+/* Header */
+
+.header .container {
+	display:grid;
+	grid-template-columns: 300px repeat(auto-fill, 120px);
+	grid-template-rows: minmax(auto, 100px);
+	grid-column-gap: 15px;
+	background: url('https://pictures.dealer.com/f/ferrariofsanantonio/1585/422256f844182c86a3f413a11d6eff60x.jpg') center no-repeat !important;
+	background-size:contain;
+	min-height:650px;
+	margin:15px 15px 0 15px;
+}
+
+.header .container .logo h1 {
+	font-family: 'JuliusBlack';
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: #fff;
+    text-align: center;
+}
+
+.header .container .logo {
+	background-color: $color__background-body;
+}
+
+.header .container .logo h1 span {
+	color:$color__primary;
+}
+
+.header .container .item {
+	font-family:'Helvetica Neue LT W01_71488920', sans-serif;
+	font-size:16px;
+    background-color: $color__nav-bg;
+    color:  $color__background-body;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    padding: 20px 10px;
+}
+
+
+/* Introduction */
+
+.introduction .container { 
+	display:grid;
+	grid-template-columns: 30% 70%;
+	grid-auto-rows: minmax(400px,auto);
+	margin:15px;
+	background-color:$color__introduction-bg;
+}
+
+.introduction .container hr {
+	border-bottom:1px solid $color__background-body;
+}
+
+.introduction .container .opening-hours {
+	align-self: center;
+	margin: 0 auto;
+}
+
+.introduction .container .opening-hours ul li span {
+    display: inline-block;
+    width: 120px;
+    padding-right: 10px;
+}
+
+.introduction .container .opening-hours h2 {
+	font-size:1.8em;
+}
+
+.introduction .container .opening-hours  ul {
+	margin:0;
+	padding:0;
+}
+
+.introduction .container .opening-hours  ul li {
+	font-size:1.1em;
+	list-style-type:none;
+}
+
+.introduction .container .opening-hours .open {
+	color: $color__primary;
+}
+
+.introduction .container .company {
+	align-self: center;
+    padding: 50px 50px 50px 150px;
+    color:$color__background-body;
+	background-color: $color__primary;
+	-webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.introduction .container .company p span {
+	font-size:1.6em;
+}
+
+/* Services */
+
+.services .container {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 100px 1fr;
+	margin:15px 15px 0 15px
+}
+
+.services .container .title {
+	color:#fff;
+	text-align:center;
+	background-color: $color__services-bg;
+}
+
+.services .container .title h2 {
+	font-size:1.8em;
+}
+
+.services .container .service {
+	background-color: $color__service-item-bg;
+	float:left;
+	padding:15px 0 15px 0
+}
+
+.services .container .service .item {
+	width:10%;
+	height:auto;
+	text-align:center;
+    margin: 15px 0;
+	float:left;
+}
+
+.services .container .service .item .image {
+	width:90px;
+	height:90px;
+	display:inline-block;
+	border-radius:50%;
+	border:5px solid $color__primary;
+}
+
+.services .container .service .item .name {
+	font-family:'Helvetica Neue LT W01_71488920', sans-serif;
+	display:inline-block;
+	width:100%;
+	float:left;
+	font-size:0.9em;
+	padding-top:10px;
+}
+
+/* Gallery */
+
+.gallery .container {
+	display:grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: minmax(auto, 325px);
+	margin:0 15px;
+	background-color:#fff;
+}
+
+.gallery .container .autofirst {
+	background: url('https://www.auto-start.co.uk/wp-content/uploads/autofirst_logo.png') center no-repeat;
+	background-size: auto;
+	background-color:#fff;
+}
+
+/* Contact */
+
+.contact .container {
+	display:grid;
+	grid-template-columns: 30% 70%;
+	grid-auto-rows: minmax(650px,auto);
+	margin:0px 15px 40px 15px;
+	background-color:$color__contact-bg;
+}
+
+.contact .container .title {
+	padding-left:50px;
+    align-self: center;
+	font-size: 1.1em;
+}
+
+.contact .container .title h3 {
+	font-size: 1.8em;
+	border-bottom:1px solid #000;
+}
+
+.contact .container .title h4 {
+	font-family: 'JuliusBlack';
+    font-size: 1.8em;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    line-height: 1.0em;
+}
+
+.contact .container .title h4 span{
+	color:$color__primary;
+}
+
+.contact .container .title p span {
+	font-size:1.4em;
+}
+
+.contact .container .location {
+	background-color:#efefef;
+	margin-top:15px;
+}
+
+.contact .container .location .map-canvas {
+	height: 650px;
+    width: 100%;
+    clear: both;
+}
+
+/* Footer */
+
+.footer .container {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(30px,auto);
+	margin:0 15px;
+}
+
+.footer .container .copyright {
+	text-align:left;
+}
+
+.footer .container .legal {
+	text-align:right;
+}
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 992px) {
+
+.introduction .container { 
+	display:grid;
+	grid-template-columns: 40% 60%;
+	grid-auto-rows: minmax(400px,auto);
+}
+
+.services .container .service .item {
+	width:20%;
+}
+
+.gallery .container {
+	grid-template-columns: 40% 60%;
+	grid-template-rows: minmax(auto, 325px);
+}
+
+.contact .container {
+	grid-template-columns: 50% 50%;
+	grid-auto-rows: minmax(450px,auto);
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.header .container {
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px repeat(3, 80px);
+}
+
+.introduction .container { 
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(370px,auto);
+}
+
+.introduction .container .company {
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	padding:25px;
+}
+
+.introduction .container .company h1 {
+	text-align:center;
+	font-size:18px;
+}
+
+.services .container .service .item {
+	width:33.3%;
+}
+
+.services .container .service .item .name {
+	font-size:0.8em;
+}
+
+.services .container .service .item:nth-child(10) {
+	display:none;
+}
+
+.gallery .container {
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(auto, 200px);
+}
+
+.contact .container {
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(auto, 400px);
+}
+
+.contact .container .title {
+	text-align:center;
+	padding:0px;
+}
+
+.footer .container {
+	grid-template-columns: 1fr;
+}
+
+.footer .container .copyright {
+	text-align:center;
+}
+
+.footer .container .legal {
+	text-align:center;
+}
+
+}
